@@ -1,0 +1,19 @@
+3 start
+first_cell:41
+n:20
+start:3 start2.0
+current_value:0
+next_value:1
+sum:0
+counter:0
+one:1
+
+start2.0: 7 first_cell copy
+true2:7 current_value copy:0
+1 one copy copy
+1 next_value current_value sum
+7 next_value current_value
+7 sum next_value
+1 one counter counter
+condition1:5 counter n true2
+stop:9
