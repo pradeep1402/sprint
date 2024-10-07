@@ -1,0 +1,22 @@
+3 Start
+sqRoot:5 result:0
+Start:3 AfterVar
+counter1:1 counter2:0
+square:0
+zero:0 one:1 stop:9
+AfterVar:4 sqRoot zero stop
+condition1:5 counter2 counter1 true1
+condition2:5 square sqRoot true2
+condition3:4 square sqRoot true3
+2 counter1 one counter1
+7 counter1 result
+3 stop
+true3:7 counter1 result
+3 stop
+true2:1 counter1 one counter1
+7 zero counter2
+7 zero square
+3 condition1
+true1:1 square counter1 square
+1 one counter2 counter2
+3 condition1
