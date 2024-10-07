@@ -1,7 +1,7 @@
 3 myStarting
-input_Starting:376
+input_Starting:456
 Output_result:0
-stop:9 
+
 zero:0
 one:1
 two:2
@@ -11,9 +11,12 @@ five:5
 seven:7
 nine:9
 eleven:11
+twelve:12
 
 
  product:0
+ Quotient:0
+ Dividend:0
  counting_for_multiply:0
  next_cell_number:0
 
@@ -50,6 +53,9 @@ value_Puter:7 next_cell_number value_at_nextCell8
 
 multipyer:7 next_cell_number value_at_nextCell9
           4 eleven value_at_nextCell9:0 true9
+
+divider:7 next_cell_number value_at_nextCell10
+        4 twelve value_at_nextCell10:0 true10
 
 
 2 Output_result one Output_result
@@ -219,4 +225,53 @@ true9:
 
 
 
- 0 0 3 4 1 11 4 2 9 9 0
+true10:
+ 1 one next_cell_number next_cell_number
+ 7 next_cell_number 
+ copying_address_for_divide
+ 2 copying_address_for_divide:0 one 
+ copying_address_for_divide
+ 1 input_Starting 
+ copying_address_for_divide 
+ copying_value_for_divide
+
+ 1 one next_cell_number next_cell_number
+ 7 next_cell_number 
+ copying_address_for_divide2
+ 2 copying_address_for_divide2:0 one 
+ copying_address_for_divide2
+ 1 input_Starting 
+ copying_address_for_divide2 
+ copying_value_for_divide2
+ 7 copying_value_for_divide2 copying_value_sub_in_div
+
+ 1 one next_cell_number next_cell_number
+ 7 next_cell_number
+ copying_address_for_divide3
+ 2 copying_address_for_divide3:0 one 
+ copying_address_for_divide3
+ 1 input_Starting 
+ copying_address_for_divide3 
+ copying_value_for_divide3
+
+
+ 7 copying_value_for_divide:0 Dividend
+
+ divide_condition:
+ 5 Dividend copying_value_for_divide2:0
+ divide_true 
+ 
+ 2 Dividend copying_value_sub_in_div:0
+ Dividend
+ 1 one Quotient Quotient
+ 3 divide_condition
+
+
+ 
+ divide_true:
+    7 Quotient copying_value_for_divide3:0 
+
+ 3 condition1
+ stop:9 
+
+0 0 12 8 7 9 9 0 3 15 0
