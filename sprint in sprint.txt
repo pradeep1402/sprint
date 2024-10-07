@@ -1,0 +1,222 @@
+3 myStarting
+input_Starting:376
+Output_result:0
+stop:9 
+zero:0
+one:1
+two:2
+three:3
+four:4
+five:5
+seven:7
+nine:9
+eleven:11
+
+
+ product:0
+ counting_for_multiply:0
+ next_cell_number:0
+
+ myStarting:7  input_Starting next_cell_number
+
+condition1:7 next_cell_number value_at_nextCell1
+ condition1.1:4 three value_at_nextCell1:0 true1
+
+
+stoper:7 next_cell_number value_at_nextCell2
+       4 nine value_at_nextCell2:0 true2
+
+
+copier:7 next_cell_number value_at_nextCell3
+       4 seven value_at_nextCell3:0 true3
+
+
+adder:7 next_cell_number value_at_nextCell4
+      4 one value_at_nextCell4:0 true4
+
+subtracter:7 next_cell_number value_at_nextCell5
+           4 two value_at_nextCell5:0 true5
+
+
+equaler:7 next_cell_number value_at_nextCell6
+        4 four value_at_nextCell6:0 true6
+
+
+lessthan_checker:7 next_cell_number value_at_nextCell7
+                 4 five value_at_nextCell7:0 true7
+
+value_Puter:7 next_cell_number value_at_nextCell8
+            4 zero value_at_nextCell8:0 true8
+
+multipyer:7 next_cell_number value_at_nextCell9
+          4 eleven value_at_nextCell9:0 true9
+
+
+2 Output_result one Output_result
+3 stop
+
+
+true1:1 one next_cell_number next_cell_number
+      7 next_cell_number jump_cell_number
+      2 jump_cell_number:0 one jump_cell_number
+
+      1  jump_cell_number input_Starting next_cell_number
+      3 condition1
+
+
+true2:3 stop
+
+
+true3:1 one next_cell_number next_cell_number
+      7 next_cell_number copying_address1
+      2 copying_address1:0 one copying_address1
+      1 copying_address1 input_Starting copying_value1
+
+      1 one next_cell_number next_cell_number
+      7 next_cell_number copying_address2
+      2 copying_address2:0 one copying_address2
+      1 copying_address2 input_Starting copying_value2
+
+      7 copying_value1:0 copying_value2:0
+
+      1 one next_cell_number next_cell_number
+      3 condition1
+
+
+true4:1 one next_cell_number next_cell_number
+      7 next_cell_number copying_address_for_adding1
+      2 copying_address_for_adding1:0 one 
+      copying_address_for_adding1
+      1 copying_address_for_adding1 input_Starting 
+      copying_value_for_adding1
+
+      1 one next_cell_number next_cell_number
+      7 next_cell_number copying_address_for_adding2
+      2 copying_address_for_adding2:0 one 
+      copying_address_for_adding2
+      1 copying_address_for_adding2 input_Starting 
+      copying_value_for_adding2
+
+
+      1 one next_cell_number next_cell_number
+      7 next_cell_number copying_address_for_adding3
+      2 copying_address_for_adding3:0 one 
+      copying_address_for_adding3
+      1 copying_address_for_adding3 input_Starting 
+      copying_value_for_adding3
+
+
+      Add_or_Sub:1 copying_value_for_adding1:0 
+      copying_value_for_adding2:0 copying_value_for_adding3:0
+      0 1 Add_or_Sub
+      1 one next_cell_number next_cell_number
+      3 condition1
+
+
+      true5:0 2 Add_or_Sub
+      3 true4
+
+
+true6:
+     1 one next_cell_number next_cell_number
+     7 next_cell_number copying_address_for_equality1
+     2 copying_address_for_equality1:0 one 
+     copying_address_for_equality1
+     1 copying_address_for_equality1 input_Starting 
+     copying_value_for_equality1
+
+     1 one next_cell_number next_cell_number
+     7 next_cell_number copying_address_for_equality2
+     2 copying_address_for_equality2:0 one 
+     copying_address_for_equality2
+     1 copying_address_for_equality2 input_Starting 
+     copying_value_for_equality2
+
+     Value_checker:4 copying_value_for_equality1:0 
+     copying_value_for_equality2:0 input_con_true1
+
+     1 next_cell_number one next_cell_number
+     0 4 Value_checker
+     3 condition1
+
+input_con_true1:1 one next_cell_number next_cell_number
+7 next_cell_number copying_address_for_equality3
+2 copying_address_for_equality3:0 one copying_address_for_equality3
+1 copying_address_for_equality3 input_Starting next_cell_number
+
+0 4 Value_checker
+3 condition1
+
+
+true7:
+ 0 5 Value_checker
+ 3 true6
+
+true8:
+ 1 one next_cell_number 
+ next_cell_number
+
+ 7 next_cell_number 
+ destination_value
+
+ 1 one next_cell_number next_cell_number
+
+ 7 next_cell_number 
+ copying_address_for_put1
+ 2 copying_address_for_put1:0 one 
+ copying_address_for_put1
+ 1 copying_address_for_put1 input_Starting 
+ destination_address
+
+ 7 destination_value:0 
+ destination_address:0
+
+ 1 one next_cell_number next_cell_number
+ 3 condition1
+
+true9:
+ 1 one next_cell_number next_cell_number
+ 7 next_cell_number 
+ copying_address_for_multiply
+ 2 copying_address_for_multiply:0 one 
+ copying_address_for_multiply
+ 1 input_Starting 
+ copying_address_for_multiply 
+ copying_value_for_multiply
+
+ 1 one next_cell_number next_cell_number
+ 7 next_cell_number 
+ copying_address_for_multiply2
+ 2 copying_address_for_multiply2:0 one 
+ copying_address_for_multiply2
+ 1 input_Starting 
+ copying_address_for_multiply2 
+ copying_value_for_multiply2
+
+ 1 one next_cell_number next_cell_number
+ 7 next_cell_number
+ copying_address_for_multiply3
+ 2 copying_address_for_multiply3:0 one 
+ copying_address_for_multiply3
+ 1 input_Starting 
+ copying_address_for_multiply3 
+ copying_value_for_multiply3
+
+
+ multiple_condition:5 
+ counting_for_multiply 
+ copying_value_for_multiply2:0 
+ multiple_true 
+ 7 product copying_value_for_multiply3:0 
+
+ 3 condition1
+ 
+ multiple_true:1 product 
+ copying_value_for_multiply:0
+ product
+ 1 one counting_for_multiply counting_for_multiply
+ 3 multiple_condition
+
+
+
+ 0 0 3 4 1 11 4 2 9 9 0
