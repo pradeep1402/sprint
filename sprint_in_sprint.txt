@@ -1,0 +1,42 @@
+3 myStarting
+input_Starting:NOT
+result:0
+stop:9 
+zero:0
+one:1
+two:2
+three:3
+four:4
+five:5
+seven:7
+nine:9
+
+myStarting:
+4 three input_Starting true1
+
+
+4 nine input_Starting true2
+
+
+4 seven input_Starting true3
+
+
+4 one input_Starting true4
+
+
+4 two input_Starting true5
+
+
+4 four input_Starting true6
+
+
+4 five input_Starting true7
+
+2 result one result
+3 stop
+
+
+3 start
+number1:3 number2:4 sum:0
+start:1 number1 number2 sum
+halt:9
