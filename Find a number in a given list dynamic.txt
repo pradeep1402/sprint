@@ -1,0 +1,32 @@
+3 7 
+first_element:42
+length:5
+target:6
+result:0
+
+
+7 first_element address
+
+
+condition1:5 counter length true1
+3 stop
+
+
+true1:7 address 20
+4 0 target true2
+1 one counter counter
+1 one address address
+3 condition1
+
+
+true2:7 one result
+3 stop
+
+
+counter:0
+one:1
+stop:9
+address:0
+
+
+4 5 6 7 9 9 5 4 
