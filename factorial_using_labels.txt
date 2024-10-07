@@ -1,0 +1,17 @@
+3 Start
+fact:7 result:1 
+Start:3 AfterVar
+ftemp:0 counter1:1 counter2:1 zero:0 stop:9 one:1
+AfterVar:4 fact zero stop
+7 fact ftemp
+condition1:5 counter1 fact true1
+3 stop
+true1:7 zero result
+7 counter1 counter2
+condition2:5 counter2 fact true2
+7 result ftemp
+1 one counter1 counter1
+3 condition1
+true2:1 result ftemp result 
+1 one counter2 counter2
+3 condition2
